@@ -27,3 +27,6 @@ npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader css-load
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 ```
+
+
+> Reference: [Educative.io](https://www.educative.io/answers/how-to-create-a-react-application-with-webpack)

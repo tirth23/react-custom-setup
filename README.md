@@ -89,8 +89,9 @@ module.exports = {
 ## start dev server
 ``` 
 npm run serve
+```
 
-##build for production
+## build for production
 ```
 |-- dist
   |-- bundle.js

@@ -1,10 +1,13 @@
 # react-custom-setup
 
-> npm init
-> npm i react
-> npm i react-dom
+```
+npm init
+npm i react
+npm i react-dom
+npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader css-loader html-webpack-plugin sass sass-loader style-loader url-loader webpack webpack-cli webpack-dev-server
+```
 
-### node modules contains all packages and files by fetchig from cdn and stores in local
+> node modules contains all packages and files by fetchig from cdn and stores in local
 
 ## webpack 
 ### Bundles modules efficiently into single/multiple files that browsers understand
@@ -18,3 +21,9 @@
 ### Different environments (development, staging, production) may require different configurations and API endpoints.It can inject environment variables during the build process, allowing you to configure environment-specific behavior in your React app
 
 ## bable transpiles the code from es6 to es5 and also convert jsx into react element
+### Create .babelrc file
+```
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+```

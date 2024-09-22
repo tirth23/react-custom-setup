@@ -86,5 +86,19 @@ module.exports = {
   "build": "webpack --mode production"
 },
 ```
+## start dev server
+``` 
+npm run serve
+
+##build for production
+```
+|-- dist
+  |-- bundle.js
+  |-- bundle.js.LICENSE.txt
+  |-- index.html
+```
+```
+npm run build
+```
 
 > Reference: [Educative.io](https://www.educative.io/answers/how-to-create-a-react-application-with-webpack)

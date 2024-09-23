@@ -74,19 +74,63 @@ module.exports = {
 ```
 |-- src
   |-- App.js
-  |-- App.scss
+  |-- App.css
   |-- index.html
+  |-- index.css
   |-- index.js
 ```
 
 ### App.js
 ```
 import React from "react";
+import "./App.css";
+
 const App = () => {
   return <h1>Hello React</h1>;
 };
 
 export default App;
+```
+
+### App.css
+```
+h1 {
+  color: red;
+}
+```
+
+### index.html
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React with Webpack</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
+### index.css
+```
+body {
+  background-color: blue;
+}
+```
+
+### index.js
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import "./index.scss";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 ```
 
 ## Create serve and build scripts in package.json

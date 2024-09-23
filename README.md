@@ -10,6 +10,7 @@ npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader css-load
 > node modules contains all packages and files by fetchig from cdn and stores in local
 
 ## Webpack 
+### Injects bundle.js file in index.html
 ### Bundles modules efficiently into single/multiple files that browsers understand.
 ### Manages dependencies(libraries), ensuring everything loads in the right order.
 ### Uses loaders like Babel to transpile modern JavaScript or JSX into browser-compatible JavaScript.
@@ -76,6 +77,16 @@ module.exports = {
   |-- App.scss
   |-- index.html
   |-- index.js
+```
+
+### App.js
+```
+import React from "react";
+const App = () => {
+  return <h1>Hello React</h1>;
+};
+
+export default App;
 ```
 
 ## Create serve and build scripts in package.json

@@ -108,6 +108,8 @@ h1 {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React with Webpack</title>
+    //webpack injects bundle.js file in index.html during build
+    //<script defer src="bundle.js"></script>
   </head>
   <body>
     <div id="root"></div>
@@ -147,13 +149,14 @@ npm run serve
 
 ## Build for production
 ```
+npm run build
+```
+```
 |-- dist
   |-- bundle.js
   |-- bundle.js.LICENSE.txt
   |-- index.html
 ```
-```
-npm run build
-```
+
 
 > Reference: [Educative.io](https://www.educative.io/answers/how-to-create-a-react-application-with-webpack)

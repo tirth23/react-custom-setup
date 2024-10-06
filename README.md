@@ -11,13 +11,13 @@ npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader css-load
 
 ## Webpack 
 ### Injects bundle.js file in index.html
-### Bundles modules efficiently into single/multiple files that browsers understand.
+### Module Bundling: Bundles modules efficiently into single/multiple files that browsers understand.
 ### Manages dependencies(libraries), ensuring everything loads in the right order.
-### Uses loaders like Babel to transpile modern JavaScript or JSX into browser-compatible JavaScript.
-### Supports code splitting, which breaks your code into smaller chunks that are loaded on demand using dynamic import, reducing the initial load time of the application.
+### Transpilation: Uses loaders like Babel to transpile modern JavaScript or JSX into browser-compatible JavaScript.
+### Code Splitting: which breaks your code into smaller chunks that are loaded on demand using dynamic import, reducing the initial load time of the application.
 ### Can bundle assets (img, fonts, stylesheet), using appropriate loaders like file-loader or url-loader, and ensures they are served efficiently.
 ### Webpack enables Hot Module Replacement during development. This allows you to see changes in your app immediately without needing to refresh the browser. For React apps, it’s incredibly useful because it can update components without losing the current app state.
-### Supports tree shaking, a technique that removes unused code (dead code) from your bundle/3rd party library, reducing its size.
+### Optimization: Removes unused code (dead code) from your bundle/3rd party library, reducing its size. Supports tree shaking, a technique that removes usused modules/components from bundle
 ### Allows you to create separate configurations for development and production. Development mode includes detailed error messages, source maps (for debugging), and skips optimizations to improve build speed. Production mode focuses on performance, performing minification, and optimization to generate efficient, compressed bundles.
 ### Different environments (development, staging, production) may require different configurations and API endpoints.It can inject environment variables during the build process, allowing you to configure environment-specific behavior in your React app
 
